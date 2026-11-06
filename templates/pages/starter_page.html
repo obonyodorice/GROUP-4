@@ -1,0 +1,83 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Our Approach - BrightPath{% endblock %}
+
+{% block body_class %}starter-page-page{% endblock %}
+
+{% block content %}
+    <!-- Page Title -->
+    <div class="page-title dark-background" data-aos="fade" style="background-image: url({% static 'img/bg/bg-2.webp' %});">
+      <div class="container position-relative">
+        <h1>Our Approach</h1>
+        <p>How BrightPath works with businesses, from the first conversation to the finished result.</p>
+        <nav class="breadcrumbs">
+          <ol>
+            <li><a href="{% url 'home' %}">Home</a></li>
+            <li class="current">Our Approach</li>
+          </ol>
+        </nav>
+      </div>
+    </div><!-- End Page Title -->
+
+    <!-- Our Approach Section -->
+    <section id="starter-section" class="starter-section features-cards section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <span class="subtitle">How We Work</span>
+        <h2>Four Steps From Idea to Delivery</h2>
+        <p>Every BrightPath project follows the same clear process, so you always know what is happening and what comes next.</p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up">
+
+        <div class="row g-4">
+          <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="150">
+            <div class="feature-card">
+              <div class="feature-icon">
+                <i class="bi bi-search"></i>
+              </div>
+              <h3>1. Understanding the Client’s Needs</h3>
+              <p>We start by learning about your business, your goals and the digital challenges you want to solve, so everything we create has a clear purpose.</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="feature-card">
+              <div class="feature-icon">
+                <i class="bi bi-map"></i>
+              </div>
+              <h3>2. Planning the Solution</h3>
+              <p>We identify the most suitable approach for your project and agree what will be created before any design or development work begins.</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="250">
+            <div class="feature-card">
+              <div class="feature-icon">
+                <i class="bi bi-code-slash"></i>
+              </div>
+              <h3>3. Design and Development</h3>
+              <p>We create your website, brand materials or digital solution, keeping the result clear, professional and focused on your business needs.</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="feature-card">
+              <div class="feature-icon">
+                <i class="bi bi-check2-circle"></i>
+              </div>
+              <h3>4. Review and Delivery</h3>
+              <p>We review the work with you, make the necessary improvements and deliver the completed solution.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="text-center mt-5" data-aos="fade-up">
+          <p>Have a project in mind? Tell us about your business and we’ll take it from there.</p>
+          <a href="{% url 'home' %}#contact" class="btn btn-primary">Start Your Project</a>
+        </div>
+
+      </div>
+
+    </section><!-- /Our Approach Section -->
+
+{% endblock %}

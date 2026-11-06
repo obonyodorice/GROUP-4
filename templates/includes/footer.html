@@ -1,0 +1,128 @@
+<footer id="footer" class="footer dark-background">
+
+    <div class="container">
+      <div class="row gy-5">
+
+        <div class="col-lg-4">
+          <div class="footer-content">
+            <a href="{% url 'home' %}" class="logo d-flex align-items-center mb-4">
+              <span class="sitename">BrightPath</span>
+            </a>
+            <p class="mb-4">BrightPath – Digital Agency. Helping businesses grow through creative design and digital solutions.</p>
+
+            <div class="newsletter-form">
+              <h5>Stay Updated</h5>
+              <form action="{% url 'newsletter' %}" method="post" class="php-email-form">
+{% csrf_token %}
+                <div class="input-group">
+                  <input type="email" name="email" class="form-control" placeholder="Enter your email" required="">
+                  <button type="submit" class="btn-subscribe">
+                    <i class="bi bi-send"></i>
+                  </button>
+                </div>
+                <div class="loading">Loading</div>
+                <div class="error-message"></div>
+                <div class="sent-message">Thank you for subscribing!</div>
+              </form>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-6">
+          <div class="footer-links">
+            <h4>Company</h4>
+            <ul>
+              <li><a href="{% url 'home' %}#about"><i class="bi bi-chevron-right"></i> About Us</a></li>
+              <li><a href="{% url 'starter_page' %}"><i class="bi bi-chevron-right"></i> Our Approach</a></li>
+              <li><a href="{% url 'home' %}#portfolio"><i class="bi bi-chevron-right"></i> Portfolio</a></li>
+              <li><a href="{% url 'home' %}#faq"><i class="bi bi-chevron-right"></i> FAQ</a></li>
+              <li><a href="{% url 'home' %}#contact"><i class="bi bi-chevron-right"></i> Contact</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-6">
+          <div class="footer-links">
+            <h4>Solutions</h4>
+            <ul>
+              <li><a href="{% url 'service_details' %}"><i class="bi bi-chevron-right"></i> Website Design &amp; Development</a></li>
+              <li><a href="{% url 'home' %}#services"><i class="bi bi-chevron-right"></i> Branding &amp; Graphic Design</a></li>
+              <li><a href="{% url 'home' %}#services"><i class="bi bi-chevron-right"></i> Digital Marketing</a></li>
+              <li><a href="{% url 'home' %}#services"><i class="bi bi-chevron-right"></i> SEO</a></li>
+              <li><a href="{% url 'home' %}#services"><i class="bi bi-chevron-right"></i> Business Digital Solutions</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-lg-4">
+          <div class="footer-contact">
+            <h4>Get in Touch</h4>
+            {% comment "Add the real business address here when available" %}
+            <div class="contact-item">
+              <div class="contact-icon">
+                <i class="bi bi-geo-alt"></i>
+              </div>
+              <div class="contact-info">
+                <p>24 Market Street<br>City Centre</p>
+              </div>
+            </div>
+            {% endcomment %}
+
+            <div class="contact-item">
+              <div class="contact-icon">
+                <i class="bi bi-telephone"></i>
+              </div>
+              <div class="contact-info">
+                <p>+1 (555) 010-2030</p>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="contact-icon">
+                <i class="bi bi-envelope"></i>
+              </div>
+              <div class="contact-info">
+                <p>hello@brightpath.example</p>
+              </div>
+            </div>
+
+            <div class="social-links">
+              <a href="#"><i class="bi bi-facebook"></i></a>
+              <a href="#"><i class="bi bi-twitter-x"></i></a>
+              <a href="#"><i class="bi bi-linkedin"></i></a>
+              <a href="#"><i class="bi bi-youtube"></i></a>
+              <a href="#"><i class="bi bi-github"></i></a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-6">
+            <div class="copyright">
+              <p>© <span>Copyright</span> <strong class="px-1 sitename">BrightPath</strong> <span>All Rights Reserved</span></p>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="footer-bottom-links">
+              <a href="#">Privacy Policy</a>
+              <a href="#">Terms of Service</a>
+              <a href="#">Cookie Policy</a>
+            </div>
+            <div class="credits">
+              <!-- All the links in the footer should remain intact. -->
+              <!-- You can delete the links only if you've purchased the pro version. -->
+              <!-- Licensing information: https://bootstrapmade.com/license/ -->
+              <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
+              Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a> | <a href="https://bootstrapmade.com/tools/">DevTools</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </footer>

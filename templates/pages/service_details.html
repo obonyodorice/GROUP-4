@@ -1,0 +1,275 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Website Design &amp; Development - BrightPath{% endblock %}
+
+{% block body_class %}service-details-page{% endblock %}
+
+{% block content %}
+    <!-- Page Title -->
+    <div class="page-title dark-background" data-aos="fade" style="background-image: url({% static 'img/bg/bg-2.webp' %});">
+      <div class="container position-relative">
+        <h1>Service Details</h1>
+        <p>How BrightPath designs and builds professional websites for small businesses and startups.</p>
+        <nav class="breadcrumbs">
+          <ol>
+            <li><a href="{% url 'home' %}">Home</a></li>
+            <li class="current">Service Details</li>
+          </ol>
+        </nav>
+      </div>
+    </div><!-- End Page Title -->
+
+    <!-- Service Details Section -->
+    <section id="service-details" class="service-details section">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row">
+
+          <!-- Main Content Area -->
+          <div class="col-lg-7">
+
+            <!-- Hero Service Introduction -->
+            <div class="service-hero" data-aos="fade-up" data-aos-delay="100">
+              <div class="service-meta">
+                <span class="service-category">Website Design &amp; Development</span>
+                <span class="reading-time">Our main focus</span>
+              </div>
+              <h1>Website Design &amp; Development</h1>
+              <p class="service-description">A professional website is often the first place customers learn about your business. We design and build websites that are clear, easy to use and work well on every device.</p>
+            </div>
+
+            <!-- Service Visual -->
+            <div class="service-visual" data-aos="zoom-in" data-aos-delay="200">
+              <img src="{% static 'img/services/services-3.webp' %}" alt="Planning a website project together" class="img-fluid">
+            </div>
+
+            <!-- Service Content -->
+            <div class="service-narrative" data-aos="fade-up" data-aos-delay="300">
+              <h3>Why a Professional Website Matters</h3>
+              <p>For most businesses, the website is where customers decide whether to trust them. A clear, professional site shows what you offer, builds confidence and makes it easy for people to get in touch.</p>
+
+              <p>BrightPath designs and develops websites for small businesses and startups. Each website is planned around your business, your customers and what you want the site to achieve.</p>
+
+              <!-- Key Benefits Grid -->
+              <div class="benefits-grid" data-aos="fade-up" data-aos-delay="400">
+                <div class="benefit-card">
+                  <div class="benefit-icon">
+                    <i class="bi bi-phone"></i>
+                  </div>
+                  <h4>Mobile Responsive</h4>
+                  <p>Your website adapts to phones, tablets and desktop computers.</p>
+                </div>
+
+                <div class="benefit-card">
+                  <div class="benefit-icon">
+                    <i class="bi bi-compass"></i>
+                  </div>
+                  <h4>Easy Navigation</h4>
+                  <p>Clear menus and layouts help visitors find what they need quickly.</p>
+                </div>
+
+                <div class="benefit-card">
+                  <div class="benefit-icon">
+                    <i class="bi bi-window"></i>
+                  </div>
+                  <h4>Professional Presentation</h4>
+                  <p>A clean, consistent design that presents your business with confidence.</p>
+                </div>
+
+                <div class="benefit-card">
+                  <div class="benefit-icon">
+                    <i class="bi bi-bullseye"></i>
+                  </div>
+                  <h4>Built Around Your Business</h4>
+                  <p>Pages and features chosen to support your goals and the way your business works.</p>
+                </div>
+              </div>
+
+            </div>
+
+            <!-- Implementation Timeline -->
+            <div class="timeline-section" data-aos="fade-up" data-aos-delay="500">
+              <h3>How We Build Your Website</h3>
+              <div class="timeline">
+                <div class="timeline-item">
+                  <div class="timeline-marker">
+                    <span>1</span>
+                  </div>
+                  <div class="timeline-content">
+                    <h4>Understanding Your Needs</h4>
+                    <p>We learn about your business, your customers and what you want your website to do.</p>
+                  </div>
+                </div>
+
+                <div class="timeline-item">
+                  <div class="timeline-marker">
+                    <span>2</span>
+                  </div>
+                  <div class="timeline-content">
+                    <h4>Planning</h4>
+                    <p>We agree the pages, features and structure of the website before any design begins.</p>
+                  </div>
+                </div>
+
+                <div class="timeline-item">
+                  <div class="timeline-marker">
+                    <span>3</span>
+                  </div>
+                  <div class="timeline-content">
+                    <h4>Design</h4>
+                    <p>We create the look and layout of your pages, focusing on clarity and a professional appearance.</p>
+                  </div>
+                </div>
+
+                <div class="timeline-item">
+                  <div class="timeline-marker">
+                    <span>4</span>
+                  </div>
+                  <div class="timeline-content">
+                    <h4>Development</h4>
+                    <p>We build the website so it works smoothly and adapts to phones, tablets and computers.</p>
+                  </div>
+                </div>
+
+                <div class="timeline-item">
+                  <div class="timeline-marker">
+                    <span>5</span>
+                  </div>
+                  <div class="timeline-content">
+                    <h4>Review</h4>
+                    <p>We go through the website with you and make the improvements needed.</p>
+                  </div>
+                </div>
+
+                <div class="timeline-item">
+                  <div class="timeline-marker">
+                    <span>6</span>
+                  </div>
+                  <div class="timeline-content">
+                    <h4>Launch</h4>
+                    <p>Once you are happy with the result, the website goes live.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div><!-- End Main Content -->
+
+          <!-- Service Sidebar -->
+          <div class="col-lg-5">
+            <div class="service-sidebar" data-aos="fade-up" data-aos-delay="200">
+
+              <!-- Service Overview Card -->
+              <div class="overview-card">
+                <div class="overview-header">
+                  <h4>Service Overview</h4>
+                </div>
+                <div class="overview-stats">
+                  <div class="stat-item">
+                    <div class="stat-number">6</div>
+                    <div class="stat-label">Project Stages</div>
+                  </div>
+                  <div class="stat-item">
+                    <div class="stat-number">Mobile</div>
+                    <div class="stat-label">Friendly Design</div>
+                  </div>
+                  <div class="stat-item">
+                    <div class="stat-number">Clear</div>
+                    <div class="stat-label">Navigation</div>
+                  </div>
+                </div>
+
+                <div class="overview-details">
+                  <div class="detail-row">
+                    <span class="detail-label">Pricing</span>
+                    <span class="detail-value">Custom quote</span>
+                  </div>
+                  <div class="detail-row">
+                    <span class="detail-label">Best Suited For</span>
+                    <span class="detail-value">Small businesses and startups</span>
+                  </div>
+                  <div class="detail-row">
+                    <span class="detail-label">Includes</span>
+                    <span class="detail-value">Design, development and launch</span>
+                  </div>
+                </div>
+              </div>
+
+{% comment "Add a genuine client story here when you have one" %}
+              <!-- Client Success Story -->
+              <div class="success-story">
+                <div class="story-quote">
+                  <p>“The team mapped out every step of our process and cut our order handling time almost in half. The results were visible within the first month.”</p>
+                </div>
+                <div class="story-author">
+                  <img src="{% static 'img/person/person-m-8.webp' %}" alt="Michael Chen" class="author-avatar">
+                  <div class="author-details">
+                    <h5>Michael Chen</h5>
+                    <span>Operations Director</span>
+                    <small>TechCorp Industries</small>
+                  </div>
+                </div>
+                <div class="story-metrics">
+                  <div class="metric">
+                    <span class="metric-value">45%</span>
+                    <span class="metric-label">Cost Reduction</span>
+                  </div>
+                  <div class="metric">
+                    <span class="metric-value">3x</span>
+                    <span class="metric-label">Speed Increase</span>
+                  </div>
+                </div>
+              </div>
+
+
+{% endcomment %}              <!-- Consultation Form -->
+              <div class="consultation-form">
+                <div class="form-header">
+                  <h4>Start Your Website Project</h4>
+                  <p>Tell us about your business and what you would like your website to do.</p>
+                </div>
+
+                <form action="{% url 'consultation' %}" method="post" class="php-email-form">
+{% csrf_token %}
+                  <div class="form-group">
+                    <input type="text" name="name" class="form-input" placeholder="Full Name" required="">
+                  </div>
+
+                  <div class="form-group">
+                    <input type="email" name="email" class="form-input" placeholder="Email Address" required="">
+                  </div>
+
+                  <div class="form-group">
+                    <input type="tel" name="phone" class="form-input" placeholder="Phone Number">
+                  </div>
+
+                  <input type="hidden" name="subject" value="Website Design and Development Enquiry">
+
+                  <div class="form-group">
+                    <textarea name="message" class="form-input" rows="4" placeholder="Tell us about your business and what you would like your website to do..." required=""></textarea>
+                  </div>
+
+                  <div class="loading">Loading</div>
+                  <div class="error-message"></div>
+                  <div class="sent-message">Your enquiry has been sent. Thank you!</div>
+
+                  <button type="submit" class="btn-consultation">
+                    <span>Send Enquiry</span>
+                    <i class="bi bi-arrow-right"></i>
+                  </button>
+                </form>
+              </div>
+
+            </div>
+          </div><!-- End Sidebar -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Service Details Section -->
+
+  
+{% endblock %}

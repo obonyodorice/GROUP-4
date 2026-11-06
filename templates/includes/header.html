@@ -1,0 +1,57 @@
+{% load static %}
+<header id="header" class="header fixed-top">
+    <div class="container-fluid container-xl position-relative">
+
+      <div class="top-row d-flex align-items-center justify-content-between">
+        <a href="{% url 'home' %}" class="logo d-flex align-items-center">
+          <!-- Uncomment the line below if you also wish to use an image logo -->
+          <img src="{% static 'img/logos/logo.webp' %}" alt="BrightPath Logo" class="logo-img">
+          <h1 class="sitename">BrightPath</h1>
+        </a>
+
+        <div class="d-flex align-items-center">
+          <div class="social-links">
+            <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+            <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="nav-wrap">
+      <div class="container d-flex justify-content-center position-relative">
+        <nav id="navmenu" class="navmenu">
+          <ul>
+            <li><a href="{% url 'home' %}#hero"{% if request.path == '/' %} class="active"{% endif %}>Home</a></li>
+            <li><a href="{% url 'home' %}#about">About</a></li>
+            <li><a href="{% url 'home' %}#features">Why Us</a></li>
+            <li><a href="{% url 'home' %}#services">Services</a></li>
+            <li><a href="{% url 'home' %}#pricing">Packages</a></li>
+            <li><a href="{% url 'home' %}#portfolio">Portfolio</a></li>
+            <li><a href="{% url 'home' %}#team">Team</a></li>
+            <li class="dropdown"><a href="#"><span>More</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+              <ul>
+                <li><a href="{% url 'starter_page' %}">Our Approach</a></li>
+                <li class="dropdown"><a href="#"><span>Our Services</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                  <ul>
+                    <li><a href="{% url 'service_details' %}">Website Design &amp; Development</a></li>
+                    <li><a href="{% url 'home' %}#services">Branding &amp; Graphic Design</a></li>
+                    <li><a href="{% url 'home' %}#services">Digital Marketing</a></li>
+                    <li><a href="{% url 'home' %}#services">SEO</a></li>
+                    <li><a href="{% url 'home' %}#services">Business Digital Solutions</a></li>
+                  </ul>
+                </li>
+                <li><a href="{% url 'portfolio_details' %}">Demonstration Project</a></li>
+                <li><a href="{% url 'home' %}#faq">FAQ</a></li>
+              </ul>
+            </li>
+            <li><a href="{% url 'home' %}#contact">Contact</a></li>
+          </ul>
+          <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+        </nav>
+      </div>
+    </div>
+
+  </header>
