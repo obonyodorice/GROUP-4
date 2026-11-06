@@ -14,4 +14,4 @@ def starter_page(request):
     return render(request, "pages/starter_page.html")
 
 def form_ok(request):
-    return HttpResponse("OK")   # nothing is saved; validate.js just needs "OK"
+    return HttpResponse("OK") 
